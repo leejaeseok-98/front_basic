@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h2>회원가입 form태그 예제</h2>
+    <!-- action은 제출할 서버의 url 주소를 입력-->
+     <!-- from에 기본 text만 담겨있을경dn에는 application/x-www-form-urlencoded-->
+      <!-- form에 파일가지 포함되어 있는 경우에는 multipart/form-data -->
+     <form action = "https://naver.com" method="post" enctype="multipart/form-data">
+        <div>
+            <!-- label의 for는 input의 id를 찾아 매칭 -->
+            <label for="userName">이름</label>
+            <!-- input의 name속성은 필수, 이 속성은 데이터가 서버로 전송될 때 각 항목을 식별하는데 사용용 -->
+             <!-- size는 input박스의 크기, maxlength는 input박스 안의 글자수를 의미 -->
+            <input type="text" id = userName name="name" size="10" maxlength="10">
+        </div>
+        <div>
+            <label for="">email</label>
+            <input type="email" id="email" name="email" size="10" maxlength="20">
+        </div>
+        <div>
+            <label>주소</label>
+            <!-- readonly는 수정은 못하지만 서버로 전송. disabled는 수정도 못하고 서버로 전송x -->
+             <!-- value는 default값 설정정 -->
+            <input type="text" name="address" size="10" maxlength="20" value="서울시 신대방동" disabled>
+
+        </div>
+        <div>
+            <label>비밀번호</label>
+            <input type="password" name="password" size="10" maxlength="20">
+
+        </div>
+
+        <div>
+            <label>성별</label>
+            <!-- radio버튼은 선택지 중 택1이다 -->
+            <input type="radio" name="gender" value="male">남성
+            <input type="radio" name="gender" value="female">여성
+        </div>
+
+        <div>
+            <label>관심분야</label>
+            <input type="checkbox" name="interests" value="sports"> 스포츠
+            <input type="checkbox" name="interests" value="music">음악
+            <input type="checkbox" name="interests" value="book">독서
+
+        </div>
+
+        <div>
+            <label>생년월일</label>
+            <input type="datetime-local" name="birthdat">
+
+        </div>
+
+        <div>
+            <label>나이</label>
+            <input type="number" name="age">
+            
+        </div> 
+
+
+
+
+
+
+
+        <div>
+        </div>
+
+        <div>
+            <label>유저선택</label>
+            <select name="userInfo">
+                <option value="guest">방문자</option>
+                <option value="user">일반유저</option>
+                <option value="admin">관리자</option>
+            </select>
+        </div> 
+        <div>
+            <label>자기소개</label><br>
+            <textarea name="resume" rows="5" cols="30" placeholder="자기소개를 여기에 써주세요"></textarea>
+
+        </div>
+        <div>
+            <label>증명사진업로드</label>
+            <input type="file" name="myphoto" accept="images/*">
+
+        </div>
+
+        <input type="submit" value="회원가입 완료">
+     </form>
+</body>
+</html>

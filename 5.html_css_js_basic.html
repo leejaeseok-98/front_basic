@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html css js 통합 기본</title>
+    <style>
+        /* 태그선택자 */
+        p{
+            color: grey;
+        }
+        /* 클래스 선택자 : 태그 선택자보다 우선*/
+        .c1{
+            color: blue;
+        }
+        #id1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- css 적용방법 3가지 : 인라인, 내부스타일, 외부스타일 -->
+     <p style="color: green; text-align: center; text-decoration: underline;">인라인 스타일 적용</p>
+     <!-- 내부 스타일 적용 : 문서 전체에 대한 디자인을 head에 style 태그 내에서 한꺼번에 지정 -->
+      <!-- 이 때 요소를 선택해야 하는데, 요소 선택의 방법으로는 태그선택자, 클래스 선택자, id선택자 3가지 방법 -->
+       <p>태그 선택자 적용</p>
+       <p class="c1">클래스 선택자 적용</p>
+       <p class="c1">클래스 선택자 적용</p>
+       <!-- id는 문서전체에서 유일해야함 -->
+       <p id="id1">id 선택자 적용</p>
+
+</body>
+</html>
