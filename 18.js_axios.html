@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js axios</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        async function callBackHell(){
+            // async함수내에서 await키워드를 통해서 동기적실행 보장.
+            const response1 = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+            console.log("a : ",response1);
+            // console.log(response1.data);
+            // console.log(response1.data.id);
+            const response2 = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+            console.log("b : ",response2);
+            const response3 = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+            console.log("c : ",response3);
+            
+        }
+        callBackHell();
+        console.log("hello world");
+    </script>
+</body>
+</html>
