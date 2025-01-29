@@ -47,7 +47,6 @@
             <input type="checkbox" name="interests" value="sports"> 스포츠
             <input type="checkbox" name="interests" value="music">음악
             <input type="checkbox" name="interests" value="book">독서
-
         </div>
 
         <div>
@@ -61,13 +60,7 @@
             <input type="number" name="age">
             
         </div> 
-
-
-
-
-
-
-
+        
         <div>
         </div>
 
@@ -87,10 +80,16 @@
         <div>
             <label>증명사진업로드</label>
             <input type="file" name="myphoto" accept="images/*">
-
+            
+        </div>
+        <div>
+            <input type="submit" value="회원가입 완료">
         </div>
 
-        <input type="submit" value="회원가입 완료">
+        <!-- input, button 둘 다 submit으로 같은 기능을 하지만,
+         button태그에 디자인적 다양성이 있어, 더 많이 사용된다.-->
+        <button type="submit">회원가입 완료(버튼)</button>
+
      </form>
 </body>
 </html>

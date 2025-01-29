@@ -1,0 +1,21 @@
+<!-- 글쓰기 form 생성 실습 -->
+ <!-- 제목, 내용입력(사이즈 넉넉), 예약여부 yes or no 라디오로, 예약등록 시간까지-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="www.naver.com" method="post" enctype="multipart/form-data">
+        <h1>갈비예찬 예약</h1>
+        <div>
+            <textarea name="contents" rows="10" cols="20" placeholder="적고 싶은거 쓰기기"></textarea>
+            <input type="radio" name="예약여부" value="yes">yes
+            <input type="radio" name="예약여부" value="no">no
+            <input type="datetime-local" name="예약등록시간">
+        </div>
+    </form>
+</body>
+</html>
